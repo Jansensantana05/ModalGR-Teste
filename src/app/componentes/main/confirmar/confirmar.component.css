@@ -1,0 +1,14 @@
+.confirmar{
+    width: 60vw;
+    height: 50vh;
+}
+
+.tabela{
+    width: 75%;
+}
+
+.tabela td {
+    width: 50%;
+    border-bottom: 1px solid #457B9D;
+    text-align: center;
+}

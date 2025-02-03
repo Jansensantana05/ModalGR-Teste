@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.botao {
+    background-color: #1D3557;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2vw;
+    color: #F1FAEE;
+    padding: 15px;
+    margin: 3px;
+}
+
+.margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box {
+    background-color: #F1FAEE;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

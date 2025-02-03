@@ -1,0 +1,31 @@
+<section>
+    <div class="box form" [ngClass]="mudarForm()">
+        <h2>Formulario</h2>
+        <form class="display-form" action="">
+            <label for="">Nome*: </label>
+            <input class="invalido" name="nome" type="text" mask="S{150}" [(ngModel)]="pessoa.nome" (input)="validarNome()" [ngClass]="mudarNome()">
+            
+            <label for="">CPF*: </label>
+            <input class="invalido" name="cpf" type="text" mask="000.000.000-00" [(ngModel)]="pessoa.CPF" (input)="validarCPF()" [ngClass]="mudarCPF()">
+    
+            <label for="">Data de Nascimento*: </label>
+            <input class="invalido" name="dat_nasc" type="date" [(ngModel)]="pessoa.dt_nasc" (input)="validarIdade()" [ngClass]="mudarIdade()">
+    
+            <label for=""> E-mail*: </label>
+            <input class="invalido" name="email" type="email" maxlength="200" [(ngModel)]="pessoa.email" (input)="validarEmail()" [ngClass]="mudarEmail()">
+    
+            <label for="">CEP*: </label>
+            <input class="invalido" name="cep" type="text" mask="00000-000" [(ngModel)]="pessoa.CEP" (input)="validarCEP()" [ngClass]="mudarCEP()">
+    
+            <div>
+                <button class="botao margin" (click)="cadastrar()">Cadastrar</button>
+                <button class="botao margin" routerLink="/cadastrar" >Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="invisible" [ngClass]="mudarConfirmar()">
+        <app-confirmar [pessoa]="pessoa"></app-confirmar>
+    </div>
+
+</section>

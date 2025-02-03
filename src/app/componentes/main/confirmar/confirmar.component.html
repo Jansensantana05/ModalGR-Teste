@@ -1,0 +1,46 @@
+<section class="box confirmar margin">
+    <h2 class="margin">Confirme se todas as informações estão corretas</h2>
+    <table class="margin tabela">
+        <tr>
+            <td>Nome:</td>
+            <td>{{ pessoa.nome }}</td>
+        </tr>
+        <tr>
+            <td>CPF:</td>
+            <td>{{ pessoa.CPF }}</td>
+        </tr>
+        <tr>
+            <td>Idade:</td>
+            <td>{{ pessoa.idade }}</td>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td>{{ pessoa.email }}</td>
+        </tr>
+        <tr>
+            <td>CEP:</td>
+            <td>{{ pessoa.CEP }}</td>
+        </tr>
+        <tr>
+            <td>Logradouro:</td>
+            <td>{{ pessoa.logradouro }}</td>
+        </tr>
+        <tr>
+            <td>Bairro:</td>
+            <td>{{ pessoa.bairro }}</td>
+        </tr>
+        <tr>
+            <td>Cidade:</td>
+            <td>{{ pessoa.cidade }}</td>
+        </tr>
+        <tr>
+            <td>Estado:</td>
+            <td>{{ pessoa.estado }}</td>
+        </tr>
+    </table>
+
+    <div class="margin">
+        <button class="botao" routerLink="/finalizar" >Confirmar</button>
+        <button class="botao" routerLink="/cadastrar" >Voltar</button>
+    </div>
+</section>

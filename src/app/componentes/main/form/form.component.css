@@ -1,0 +1,19 @@
+.form{
+    width: 60vw;
+    height: 50vh;
+}
+
+.display-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.invalido {
+    border: 1px solid red;
+}
+
+.valido {
+    border: 1px solid green;
+}
