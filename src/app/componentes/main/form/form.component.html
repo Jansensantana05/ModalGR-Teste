@@ -3,7 +3,7 @@
         <h2>Formulario</h2>
         <form class="display-form" action="">
             <label for="">Nome*: </label>
-            <input class="invalido" name="nome" type="text" mask="S{150}" [(ngModel)]="pessoa.nome" (input)="validarNome()" [ngClass]="mudarNome()">
+            <input class="invalido" name="nome" type="text" mask="S{150}" [patterns]="patterns" [(ngModel)]="pessoa.nome" (input)="validarNome()" [ngClass]="mudarNome()">
             
             <label for="">CPF*: </label>
             <input class="invalido" name="cpf" type="text" mask="000.000.000-00" [(ngModel)]="pessoa.CPF" (input)="validarCPF()" [ngClass]="mudarCPF()">

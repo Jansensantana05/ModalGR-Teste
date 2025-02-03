@@ -26,9 +26,9 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxMaskDirective
+    NgxMaskDirective,
   ],
-  providers: [provideNgxMask({})],
+  providers: [provideNgxMask({  })],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

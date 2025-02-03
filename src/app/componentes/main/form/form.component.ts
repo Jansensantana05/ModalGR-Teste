@@ -32,6 +32,10 @@ export class FormComponent {
 
   efetivarCadastro = false;
 
+  public patterns = {
+    S: { pattern: /[A-Za-zÀ-ÖØ-öø-ÿÇç ]/ }
+  };
+
   cadastrar() {
     if(this.validacao.nome === true && this.validacao.cpf === true && this.validacao.idade === true && this.validacao.email === true && this.validacao.cep === true){
       this.efetivarCadastro = true;

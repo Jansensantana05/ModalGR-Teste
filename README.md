@@ -1,59 +1,45 @@
 # CadastroDePessoasModalGR
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Esse projeto fo feito utilizando o [Angular CLI](https://github.com/angular/angular-cli) versão 19.1.5.
 
 ## Development server
 
-To start a local development server, run:
+Para iniciar um servidor de desenvolvimento local, execute:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Assim que o servidor estiver em execução, abra seu navegador e navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente sempre que você modificar qualquer um dos arquivos de origem.
 
-## Code scaffolding
+### Sobre o Projeto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Projeto desenvolvido como teste tecnico para a Formação ModalGR
 
-```bash
-ng generate component component-name
-```
+A equipe de RH da ModalGR solicitou o desenvolvimento de um sistema de cadastro de pessoas utilizando TypeScript/JavaScript, sendo preferencialmente desenvolvido em Angular. o sistema deverá conter os seguintes campos e validações. O sistema deve estar devidamente estilizado e realizar uma integração com a API ViaCEP para preenchimento automático do endereço com base no CEP informado. 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Campos do formulário e validações:
 
-```bash
-ng generate --help
-```
+1. Nome: Deve conter até 150 caracteres, permitindo apenas letras (incluindo espaços e caracteres acentuados, se aplicável). Campo obrigatório.
 
-## Building
+2. CPF: Deve ser um CPF com 11 dígitos numéricos e ser formatado automaticamente para 000.000.000-00. Deve ser validado para garantir que o CPF é valido. Campo obrigatório.
 
-To build the project run:
+3. Data de nascimento: Deve ser uma data válida. Campo obrigatório.
 
-```bash
-ng build
-```
+4. E-mail: Deve conter até 200 caracteres. Deve seguir o formato padrão de e-mail (exemplo: nome@dominio.com). Campo obrigatório.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+5. CEP: Deve conter 8 dígitos numéricos e ser formatado automaticamente para 00000-000. o Deve ser validado para garantir que o CEP existe. o Campo obrigatório. Integração com a API ViaCEP: Após a inserção do CEP, o sistema deve consultar a API ViaCEP para preencher os campos de logradouro, bairro, cidade e estado.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Funcionamento
 
-```bash
-ng test
-```
+Ao clicar no botão Cadastrar, o sistema deve:
+1. Validar os campos preenchidos.
+2. Consultar a API ViaCEP para obter o endereço correspondente ao CEP informado.
+3. Exibir os dados cadastrados em uma tabela contendo: Nome, E-mail, Idade (calculada com base na data de nascimento e o momento atual), CPF, CEP ,Logradouro ,Bairro, Cidade, Estado
 
-## Running end-to-end tests
+O sistema deve ser estilizado e garantir uma experiência amigável ao usuário.
 
-For end-to-end (e2e) testing, run:
+## Minha Expereiencia
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Me desafie a aprender o Framework Angular, sendo minha primeira experiencia. Me sinto satisfeito com o resultado com base no tempo que tive para estudar o Framework. O projeto precisa de refatoração na sua logica de funcionamento para reduzir a repetição de código, mas inicialmente necessito aumentar minha base de conhecimento para conseguir fazer tal de melhor forma. A estilização da pagina pode melhorar muito, pois escolhi um estilo simplista, pois meu foco foi aprender essa nova ferramenta.  
