@@ -1,6 +1,6 @@
 # CadastroDePessoasModalGR
 
-Esse projeto fo feito utilizando o [Angular CLI](https://github.com/angular/angular-cli) versão 19.1.5.
+Esse projeto foi feito utilizando o [Angular CLI](https://github.com/angular/angular-cli) versão 19.1.5.
 
 ## Development server
 
@@ -40,6 +40,6 @@ Ao clicar no botão Cadastrar, o sistema deve:
 
 O sistema deve ser estilizado e garantir uma experiência amigável ao usuário.
 
-## Minha Expereiencia
+## Minha Experiencia
 
-Me desafie a aprender o Framework Angular, sendo minha primeira experiencia. Me sinto satisfeito com o resultado com base no tempo que tive para estudar o Framework. O projeto precisa de refatoração na sua logica de funcionamento para reduzir a repetição de código, mas inicialmente necessito aumentar minha base de conhecimento para conseguir fazer tal de melhor forma. A estilização da pagina pode melhorar muito, pois escolhi um estilo simplista, pois meu foco foi aprender essa nova ferramenta.  
+Me desafiei a aprender o Framework Angular, sendo minha primeira experiencia. Me sinto satisfeito com o resultado com base no tempo que tive para estudar o Framework. O projeto precisa de refatoração na sua logica de funcionamento para reduzir a repetição de código, mas inicialmente necessito aumentar minha base de conhecimento para conseguir fazer tal de melhor forma. A estilização da pagina pode melhorar muito, pois escolhi um estilo simplista, pois meu foco foi aprender essa nova ferramenta.  
